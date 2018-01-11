@@ -55,6 +55,8 @@ Temporary Items
 
 # End of https://www.gitignore.io/api/go,macos,visualstudiocode
 
+### Protobuf and other files ###
+
 # Compiled protobuf files
 *.pb.go
 *.pb.gw.go
