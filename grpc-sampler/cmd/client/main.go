@@ -51,9 +51,9 @@ func main() {
 
 	c := api.NewPingClient(conn)
 
-	response, err := c.SayHello(context.Background(), &api.PingMessage{Greeting: "foo"})
+	response, err := c.SayHello(context.Background(), &api.PingRequest{TemperatureCelsius: 20})
 	if err != nil {
 		log.Fatalf("error when calling SayHello: %s", err)
 	}
-	log.Printf("Response from server: %s", response.Greeting)
+	log.Printf("Fahrenheit Response: %f", response.TemperatureFahrenheit)
 }

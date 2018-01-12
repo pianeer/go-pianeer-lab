@@ -8,6 +8,7 @@ SERVER_PKG_BUILD := "${PKG}/cmd/server"
 CLIENT_PKG_BUILD := "${PKG}/cmd/client"
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/)
 GOPATH := go env GOPATH
+# GOPATH := "/Users/nmohan/go"
 
 .PHONY: all api server client
 
